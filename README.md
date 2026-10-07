@@ -37,7 +37,7 @@ Extra: Gör de tre extrautmaningarna längst ner i ticket-listan.
 
 ## 📁 Startfilen
 
-I `js/app.js` finns speldatan, DOM-elementen, tomma funktioner och händelserna redan. Ni fyller i funktionerna.
+I `js/app.js` finns speldatan och tomma funktioner. De element ni behöver hämtar ni själva under *Element i DOM:en*, och knapparna kopplar ni under *Händelser*. Klasser och id:n hittar ni i `index.html`.
 
 **Två regler som gör det enklare:**
 
@@ -84,7 +84,7 @@ Bygg ut `holdScore()` med en kontroll mot `WINNING_SCORE`.
 
 ### EXTRA-2 · Välj vinstpoäng
 
-Inputfältet finns redan i HTML:en (`finalScoreInput`).
+Inputfältet `.final-score` finns redan i HTML:en.
 
 **Klart när:** spelet använder talet i fältet som vinstgräns, och 100 om fältet är tomt.
 
@@ -92,7 +92,7 @@ Inputfältet finns redan i HTML:en (`finalScoreInput`).
 
 ### EXTRA-3 · Två tärningar
 
-Den andra tärningen finns redan (`dice2`).
+Den andra tärningen `#dice-2` finns redan i HTML:en.
 
 **Klart när:** båda tärningarna slås och visas, summan läggs till i omgångspoängen, och omgången förloras om **någon** av dem är en 1:a.
 

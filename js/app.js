@@ -15,13 +15,6 @@ let isPlaying = true;      // Blir false när någon har vunnit
 
 // ---------- 2. Element i DOM:en ----------
 
-const btnNew = document.querySelector('.btn-new');
-const btnRoll = document.querySelector('.btn-roll');
-const btnHold = document.querySelector('.btn-hold');
-
-const dice1 = document.querySelector('#dice-1');
-const dice2 = document.querySelector('#dice-2');          // EXTRA-3
-const finalScoreInput = document.querySelector('.final-score'); // EXTRA-2
 
 
 // ---------- 3. Funktioner ----------
@@ -48,9 +41,5 @@ function switchPlayer() {
 
 
 // ---------- 4. Händelser ----------
-
-btnNew.addEventListener('click', init);
-btnRoll.addEventListener('click', rollDice);
-btnHold.addEventListener('click', holdScore);
 
 init();
