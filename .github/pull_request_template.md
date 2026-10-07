@@ -4,9 +4,8 @@ Vilken ticket löser PR:en? Kryssa bara i det som är klart.
 
 - [ ] SPEL-1 Nytt spel nollställer allt
 - [ ] SPEL-2 Slå tärning
-- [ ] SPEL-3 En 1:a byter spelare
-- [ ] SPEL-4 Håll poäng
-- [ ] SPEL-5 Vinnare
+- [ ] SPEL-3 Håll poäng
+- [ ] SPEL-4 Vinnare
 - [ ] EXTRA-1 Två 6:or i rad
 - [ ] EXTRA-2 Välj vinstpoäng
 - [ ] EXTRA-3 Två tärningar

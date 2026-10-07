@@ -36,12 +36,12 @@ function rollDice() {
 
 }
 
-// SPEL-4 och SPEL-5: Körs när man klickar på "Håll poäng"
+// SPEL-3 och SPEL-4: Körs när man klickar på "Håll poäng"
 function holdScore() {
 
 }
 
-// SPEL-3: Byter till den andra spelaren
+// SPEL-2: Byter till den andra spelaren
 function switchPlayer() {
 
 }

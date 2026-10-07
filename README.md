@@ -48,7 +48,7 @@ I `js/app.js` finns speldatan, DOM-elementen, tomma funktioner och händelserna 
 
 ## 🎫 Tickets
 
-**SPEL-1 till SPEL-4** ligger i var sin funktion och kan göras parallellt. **SPEL-5** bygger vidare på SPEL-4. **EXTRA** gör ni om ni hinner, när grundspelet är mergat till `main`.
+**SPEL-1 till SPEL-3** kan göras parallellt. **SPEL-4** bygger vidare på SPEL-3. **EXTRA** gör ni om ni hinner, när grundspelet är mergat till `main`.
 
 ### SPEL-1 · Nytt spel nollställer allt
 
@@ -58,23 +58,17 @@ Fyll i `init()`.
 
 ### SPEL-2 · Slå tärning
 
-Fyll i `rollDice()`, men vänta med vad som händer vid en 1:a.
+Fyll i `rollDice()` och `switchPlayer()`.
 
-**Klart när:** tärningen syns, bilden visar samma tal som slumpades, och talet läggs till i den aktiva spelarens omgångspoäng.
+**Klart när:** tärningen syns, bilden visar samma tal som slumpades, och talet läggs till i den aktiva spelarens omgångspoäng. Slår spelaren en 1:a nollställs omgångspoängen, den andra spelaren blir aktiv (grå bakgrund och röd prick flyttas över) och nästa kast räknas till rätt spelare.
 
-### SPEL-3 · En 1:a byter spelare
+### SPEL-3 · Håll poäng
 
-Fyll i `switchPlayer()`. Anropet från `rollDice()` vid en 1:a lägger ni in när SPEL-2 är mergad — hämta `main` först.
-
-**Klart när:** omgångspoängen nollställs, den andra spelaren blir aktiv (grå bakgrund och röd prick flyttas över) och nästa kast räknas till rätt spelare.
-
-### SPEL-4 · Håll poäng
-
-Fyll i `holdScore()`, men vänta med vinstkontrollen.
+Fyll i `holdScore()`, men vänta med vinstkontrollen. Bytet till nästa spelare görs med `switchPlayer()` från SPEL-2, så hämta `main` när den är mergad.
 
 **Klart när:** omgångspoängen läggs till i totalpoängen, totalpoängen visas, och det blir den andra spelarens tur.
 
-### SPEL-5 · Vinnare
+### SPEL-4 · Vinnare
 
 Bygg ut `holdScore()` med en kontroll mot `WINNING_SCORE`.
 
@@ -133,14 +127,13 @@ cd workshop-pig-game-grupp-N
 
 ### 3. Fördela tickets
 
-Varje funktion i `app.js` är en egen ticket, så ni kan jobba parallellt. Ett förslag för fyra personer:
+Ticketsen ligger i olika funktioner, så ni kan jobba parallellt. Ett förslag för fyra personer:
 
 | Person | Ticket | Funktion |
 |---|---|---|
 | A | SPEL-1 | `init()` |
-| B | SPEL-2 | `rollDice()` |
-| C | SPEL-3 | `switchPlayer()` |
-| D | SPEL-4, sedan SPEL-5 | `holdScore()` |
+| B | SPEL-2 | `rollDice()` och `switchPlayer()` |
+| C och D | SPEL-3, sedan SPEL-4 | `holdScore()`, i par |
 
 Är ni färre, ta två var. Sitt gärna två och två på samma dator.
 

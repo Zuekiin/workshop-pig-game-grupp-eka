@@ -45,7 +45,7 @@ Minst **en radkommentar** per PR, och hänvisa till **Klart när** när något s
 
 Skriv så här:
 
-> **SPEL-5:** `rollDice()` kollar aldrig `isPlaying`, så det går att slå tärning efter att någon vunnit. Ticketen säger att bara *Nytt spel* ska fungera då.
+> **SPEL-4:** `rollDice()` kollar aldrig `isPlaying`, så det går att slå tärning efter att någon vunnit. Ticketen säger att bara *Nytt spel* ska fungera då.
 
 Och inte så här:
 
