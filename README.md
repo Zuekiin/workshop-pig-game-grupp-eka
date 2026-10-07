@@ -37,21 +37,12 @@ Extra: Gör de tre extrautmaningarna längst ner i ticket-listan.
 
 ## 📁 Startfilen
 
-Öppna `js/app.js`. Den är uppdelad i fyra delar:
-
-| Del | Innehåll |
-|---|---|
-| **1. Speldata** | `WINNING_SCORE`, `scores`, `roundScore`, `activePlayer`, `isPlaying`. Allt spelet behöver komma ihåg. |
-| **2. Element i DOM:en** | Knapparna, tärningarna och inputfältet är redan hämtade. |
-| **3. Funktioner** | `init()`, `rollDice()`, `holdScore()` och `switchPlayer()`. Tomma, med `TODO`-kommentarer som steg. |
-| **4. Händelser** | Knapparna är redan kopplade till funktionerna. |
-
-Ni behöver alltså inte skapa några nya variabler eller lyssnare för grundspelet. Fyll i funktionerna.
+I `js/app.js` finns speldatan, DOM-elementen, tomma funktioner och händelserna redan. Ni fyller i funktionerna.
 
 **Två regler som gör det enklare:**
 
 1. **Ändra datan först, visa den sedan.** Uppdatera t.ex. `roundScore` och skriv sedan ut den med `textContent`. Läs aldrig poängen från sidan.
-2. **Testa efter varje TODO.** Lägg in en `console.log()` och kolla i DevTools innan ni går vidare.
+2. **Testa ofta.** Lägg in en `console.log()` och kolla i DevTools innan ni går vidare.
 
 ---
 
@@ -71,15 +62,11 @@ Fyll i `rollDice()`, men vänta med vad som händer vid en 1:a.
 
 **Klart när:** tärningen syns, bilden visar samma tal som slumpades, och talet läggs till i den aktiva spelarens omgångspoäng.
 
-*Tips:* `dice1.src = \`img/dice-${dice}.png\``
-
 ### SPEL-3 · En 1:a byter spelare
 
 Fyll i `switchPlayer()`. Anropet från `rollDice()` vid en 1:a lägger ni in när SPEL-2 är mergad — hämta `main` först.
 
 **Klart när:** omgångspoängen nollställs, den andra spelaren blir aktiv (grå bakgrund och röd prick flyttas över) och nästa kast räknas till rätt spelare.
-
-*Tips:* `classList.toggle('active')` på båda panelerna.
 
 ### SPEL-4 · Håll poäng
 
