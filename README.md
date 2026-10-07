@@ -199,16 +199,6 @@ Två har ändrat samma rader. Öppna filen i VS Code, välj vilken version som s
 
 ---
 
-## 📤 När ni är klara
-
-1. Alla tickets är mergade till `main`, och spelet fungerar när ni kör `main`:
-
-   - **Spela en hel match.** Uppfyller varje ticket sitt **Klart när**?
-   - **Testa kanterna.** Slå en 1:a på första kastet. Klicka *Håll poäng* med 0 i omgångspoäng. Klicka på knapparna efter att någon har vunnit. Klicka *Nytt spel* mitt i en omgång.
-   - **Konsolen.** DevTools → Console. Inga röda fel.
-
-2. Klistra in länken till ert grupprepo i **#fjs26**.
-
 Lycka till! 🤩
 
 *// Sandra*
